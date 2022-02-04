@@ -1,0 +1,204 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "As a user I am able to login into the application with my credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-into-the-application;as-a-user-i-am-able-to-login-into-the-application-with-my-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "URL of the application should be open.",
+            "match": {
+              "location": "LoginPageSteps.url_of_the_application_should_be_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "The user navigates to the login page.",
+            "match": {
+              "location": "LoginPageSteps.the_user_navigates_to_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "The user enters his credentials username - \"hammamiehfiras34@gmail.com\" and Password - \"Firas@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hammamiehfiras34@gmail.com",
+                  "offset": 44
+                },
+                {
+                  "val": "Firas@123",
+                  "offset": 88
+                }
+              ],
+              "location": "LoginPageSteps.the_user_enters_his_credentials_username_and_Password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "The user should be logged in.",
+            "match": {
+              "location": "LoginPageSteps.the_user_should_be_logged_in()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "As a user I am not able to login into the application with my credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-into-the-application;as-a-user-i-am-not-able-to-login-into-the-application-with-my-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "URL of the application should be open.",
+            "match": {
+              "location": "LoginPageSteps.url_of_the_application_should_be_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "The user navigates to the login page.",
+            "match": {
+              "location": "LoginPageSteps.the_user_navigates_to_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "The user enters his credentials username - \"smith\" and Password - \"Random\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "smith",
+                  "offset": 44
+                },
+                {
+                  "val": "Random",
+                  "offset": 67
+                }
+              ],
+              "location": "LoginPageSteps.the_user_enters_his_credentials_username_and_Password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "The user should be logged in.",
+            "match": {
+              "location": "LoginPageSteps.the_user_should_be_logged_in()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "As a user I am not able to login into the application with my credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-into-the-application;as-a-user-i-am-not-able-to-login-into-the-application-with-my-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "URL of the application should be open.",
+            "match": {
+              "location": "LoginPageSteps.url_of_the_application_should_be_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The user navigates to the login page.",
+            "match": {
+              "location": "LoginPageSteps.the_user_navigates_to_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "The user enters his credentials username - \"hammamiehfiras34@gmail.com\" and Password - \"Random\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hammamiehfiras34@gmail.com",
+                  "offset": 44
+                },
+                {
+                  "val": "Random",
+                  "offset": 88
+                }
+              ],
+              "location": "LoginPageSteps.the_user_enters_his_credentials_username_and_Password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "The user should be logged in.",
+            "match": {
+              "location": "LoginPageSteps.the_user_should_be_logged_in()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "As a user i should be able to login into the application",
+    "description": "",
+    "id": "as-a-user-i-should-be-able-to-login-into-the-application",
+    "keyword": "Feature",
+    "uri": "D:/various/eclipse-workspace/CucumberSelenium/src/main/java/sanveoCucumber/features/LoginPage.feature"
+  }
+]

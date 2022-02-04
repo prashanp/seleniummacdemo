@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
+    <testcase classname="As a user i should be able to login into the application" name="As a user I am able to login into the application with my credentials" time="0">
+        <system-out>
+            <![CDATA[Given URL of the application should be open.................................skipped
+When The user navigates to the login page...................................skipped
+Then The user enters his credentials username - "hammamiehfiras34@gmail.com" and Password - "Firas@123".skipped
+And The user should be logged in............................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="As a user i should be able to login into the application" name="As a user I am not able to login into the application with my credentials" time="0">
+        <system-out>
+            <![CDATA[Given URL of the application should be open.................................skipped
+When The user navigates to the login page...................................skipped
+Then The user enters his credentials username - "smith" and Password - "Random".skipped
+And The user should be logged in............................................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="As a user i should be able to login into the application" name="As a user I am not able to login into the application with my credentials" time="0">
+        <system-out>
+            <![CDATA[Given URL of the application should be open.................................skipped
+When The user navigates to the login page...................................skipped
+Then The user enters his credentials username - "hammamiehfiras34@gmail.com" and Password - "Random".skipped
+And The user should be logged in............................................skipped
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
