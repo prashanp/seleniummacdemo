@@ -1,30 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
-    <testcase classname="As a user i should be able to login into the application" name="As a user I am able to login into the application with my credentials" time="0">
-        <system-out>
-            <![CDATA[Given URL of the application should be open.................................skipped
-When The user navigates to the login page...................................skipped
-Then The user enters his credentials username - "hammamiehfiras34@gmail.com" and Password - "Firas@123".skipped
-And The user should be logged in............................................skipped
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="31.353662">
+    <testcase classname="Sign in feature" name="SIGNIN : ##0001: Sign In / Sign Out" time="16.372224">
+        <failure message="java.lang.NullPointerException&#13;&#10;&#9;at nc.pages.SigninHelper.enter_userid(SigninHelper.java:29)&#13;&#10;&#9;at ncCucumber.stepDefinitions.SigninSteps.Enters_a_valid_userid(SigninSteps.java:104)&#13;&#10;&#9;at ✽.And Enters a valid userid &quot;cm&quot;(C:/SeleniumCucumber/CucumberSelenium/src/main/java/ncCucumber/features/Signin.feature:9)&#13;&#10;">
+            <![CDATA[Given Go to nccpa sign in page..............................................passed
+When User is in signin page.................................................passed
+Then User should see the role from the select role dropdown list............passed
+And Enters a valid userid "cm"..............................................failed
+And Enters a valid password "Password1*"....................................skipped
+And Click on Signin button..................................................skipped
+Then Check background Questions.............................................skipped
+Then validate login is successful...........................................skipped
+Then Check Important Notice Dialog..........................................skipped
+Then Dashboard menu item dispaly is display.................................skipped
+And Verify the signout button is visible....................................skipped
+And Clicks on signout to leave the Dashboard page...........................skipped
+Then Verifies the signout is successful.....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at nc.pages.SigninHelper.enter_userid(SigninHelper.java:29)
+	at ncCucumber.stepDefinitions.SigninSteps.Enters_a_valid_userid(SigninSteps.java:104)
+	at ✽.And Enters a valid userid "cm"(C:/SeleniumCucumber/CucumberSelenium/src/main/java/ncCucumber/features/Signin.feature:9)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="As a user i should be able to login into the application" name="As a user I am not able to login into the application with my credentials" time="0">
-        <system-out>
-            <![CDATA[Given URL of the application should be open.................................skipped
-When The user navigates to the login page...................................skipped
-Then The user enters his credentials username - "smith" and Password - "Random".skipped
-And The user should be logged in............................................skipped
+    <testcase classname="Sign in feature" name="SIGNIN : ##0001: Sign In / Sign Out 2" time="14.981438">
+        <failure message="java.lang.NullPointerException&#13;&#10;&#9;at nc.pages.SigninHelper.enter_userid(SigninHelper.java:29)&#13;&#10;&#9;at ncCucumber.stepDefinitions.SigninSteps.Enters_a_valid_userid(SigninSteps.java:104)&#13;&#10;&#9;at ✽.And Enters a valid userid &quot;cr&quot;(C:/SeleniumCucumber/CucumberSelenium/src/main/java/ncCucumber/features/Signin.feature:9)&#13;&#10;">
+            <![CDATA[Given Go to nccpa sign in page..............................................passed
+When User is in signin page.................................................passed
+Then User should see the role from the select role dropdown list............passed
+And Enters a valid userid "cr"..............................................failed
+And Enters a valid password "Password1*"....................................skipped
+And Click on Signin button..................................................skipped
+Then Check background Questions.............................................skipped
+Then validate login is successful...........................................skipped
+Then Check Important Notice Dialog..........................................skipped
+Then Dashboard menu item dispaly is display.................................skipped
+And Verify the signout button is visible....................................skipped
+And Clicks on signout to leave the Dashboard page...........................skipped
+Then Verifies the signout is successful.....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at nc.pages.SigninHelper.enter_userid(SigninHelper.java:29)
+	at ncCucumber.stepDefinitions.SigninSteps.Enters_a_valid_userid(SigninSteps.java:104)
+	at ✽.And Enters a valid userid "cr"(C:/SeleniumCucumber/CucumberSelenium/src/main/java/ncCucumber/features/Signin.feature:9)
 ]]>
-        </system-out>
-    </testcase>
-    <testcase classname="As a user i should be able to login into the application" name="As a user I am not able to login into the application with my credentials" time="0">
-        <system-out>
-            <![CDATA[Given URL of the application should be open.................................skipped
-When The user navigates to the login page...................................skipped
-Then The user enters his credentials username - "hammamiehfiras34@gmail.com" and Password - "Random".skipped
-And The user should be logged in............................................skipped
-]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

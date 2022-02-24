@@ -4,52 +4,140 @@
     "elements": [
       {
         "line": 3,
-        "name": "As a user I am able to login into the application with my credentials",
+        "name": "",
         "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-into-the-application;as-a-user-i-am-able-to-login-into-the-application-with-my-credentials",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 2179348200,
+              "status": "passed"
             },
-            "line": 5,
-            "name": "URL of the application should be open.",
+            "line": 4,
+            "name": "Go to nccpa sign in page",
             "match": {
-              "location": "LoginPageSteps.url_of_the_application_should_be_open()"
+              "location": "SigninSteps.Go_to_nccpa_signin_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5011191300,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "The user navigates to the login page.",
+            "line": 5,
+            "name": "User is in signin page",
             "match": {
-              "location": "LoginPageSteps.the_user_navigates_to_the_login_page()"
+              "location": "SigninSteps.User_is_in_signin_page()"
             },
             "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2712091900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageSteps.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "SIGNIN : ##0001: Sign In / Sign Out",
+        "description": "",
+        "id": "sign-in-feature;signin-:-##0001:-sign-in-/-sign-out;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 564336600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageSteps.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5008971300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see the role from the select role dropdown list",
+            "match": {
+              "location": "SigninSteps.User_should_see_the_role()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 896284900,
+              "error_message": "java.lang.NullPointerException\r\n\tat nc.pages.SigninHelper.enter_userid(SigninHelper.java:29)\r\n\tat ncCucumber.stepDefinitions.SigninSteps.Enters_a_valid_userid(SigninSteps.java:104)\r\n\tat ✽.And Enters a valid userid \"cm\"(C:/SeleniumCucumber/CucumberSelenium/src/main/java/ncCucumber/features/Signin.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Enters a valid userid \"cm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cm",
+                  "offset": 23
+                }
+              ],
+              "location": "SigninSteps.Enters_a_valid_userid(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 7,
-            "name": "The user enters his credentials username - \"hammamiehfiras34@gmail.com\" and Password - \"Firas@123\"",
+            "line": 10,
+            "name": "Enters a valid password \"Password1*\"",
             "match": {
               "arguments": [
                 {
-                  "val": "hammamiehfiras34@gmail.com",
-                  "offset": 44
-                },
-                {
-                  "val": "Firas@123",
-                  "offset": 88
+                  "val": "Password1*",
+                  "offset": 25
                 }
               ],
-              "location": "LoginPageSteps.the_user_enters_his_credentials_username_and_Password(String,String)"
+              "location": "SigninSteps.Enters_a_valid_password(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Click on Signin button",
+            "match": {
+              "location": "SigninSteps.Click_on_Signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Check background Questions",
+            "match": {
+              "location": "SigninSteps.Check_background_Questions()"
             },
             "keyword": "Then "
           },
@@ -57,63 +145,32 @@
             "result": {
               "status": "skipped"
             },
-            "line": 8,
-            "name": "The user should be logged in.",
-            "match": {
-              "location": "LoginPageSteps.the_user_should_be_logged_in()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 11,
-        "name": "As a user I am not able to login into the application with my credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-into-the-application;as-a-user-i-am-not-able-to-login-into-the-application-with-my-credentials",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
             "line": 13,
-            "name": "URL of the application should be open.",
+            "name": "validate login is successful",
             "match": {
-              "location": "LoginPageSteps.url_of_the_application_should_be_open()"
+              "location": "SigninSteps.validate_login_is_successful()"
             },
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
               "status": "skipped"
             },
             "line": 14,
-            "name": "The user navigates to the login page.",
+            "name": "Check Important Notice Dialog",
             "match": {
-              "location": "LoginPageSteps.the_user_navigates_to_the_login_page()"
+              "location": "SigninSteps.Check_Important_Notice_Dialog()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
               "status": "skipped"
             },
             "line": 15,
-            "name": "The user enters his credentials username - \"smith\" and Password - \"Random\"",
+            "name": "Dashboard menu item dispaly is display",
             "match": {
-              "arguments": [
-                {
-                  "val": "smith",
-                  "offset": 44
-                },
-                {
-                  "val": "Random",
-                  "offset": 67
-                }
-              ],
-              "location": "LoginPageSteps.the_user_enters_his_credentials_username_and_Password(String,String)"
+              "location": "SigninSteps.Dashboard_menu_item_dispaly()"
             },
             "keyword": "Then "
           },
@@ -122,62 +179,172 @@
               "status": "skipped"
             },
             "line": 16,
-            "name": "The user should be logged in.",
+            "name": "Verify the signout button is visible",
             "match": {
-              "location": "LoginPageSteps.the_user_should_be_logged_in()"
+              "location": "SigninSteps.Verify_the_signout_button_is_visible(String)"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 19,
-        "name": "As a user I am not able to login into the application with my credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-into-the-application;as-a-user-i-am-not-able-to-login-into-the-application-with-my-credentials",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 21,
-            "name": "URL of the application should be open.",
+            "line": 17,
+            "name": "Clicks on signout to leave the Dashboard page",
             "match": {
-              "location": "LoginPageSteps.url_of_the_application_should_be_open()"
+              "location": "SigninSteps.Clicks_on_signout_to_leave_the_Dashboard_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Verifies the signout is successful",
+            "match": {
+              "location": "SigninSteps.Verifies_the_signout_is_successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2079701600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Go to nccpa sign in page",
+            "match": {
+              "location": "SigninSteps.Go_to_nccpa_signin_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5000297700,
+              "status": "passed"
             },
-            "line": 22,
-            "name": "The user navigates to the login page.",
+            "line": 5,
+            "name": "User is in signin page",
             "match": {
-              "location": "LoginPageSteps.the_user_navigates_to_the_login_page()"
+              "location": "SigninSteps.User_is_in_signin_page()"
             },
             "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2094189500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageSteps.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "SIGNIN : ##0001: Sign In / Sign Out",
+        "description": "",
+        "id": "sign-in-feature;signin-:-##0001:-sign-in-/-sign-out;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 574568700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageSteps.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5001275800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see the role from the select role dropdown list",
+            "match": {
+              "location": "SigninSteps.User_should_see_the_role()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 231404400,
+              "error_message": "java.lang.NullPointerException\r\n\tat nc.pages.SigninHelper.enter_userid(SigninHelper.java:29)\r\n\tat ncCucumber.stepDefinitions.SigninSteps.Enters_a_valid_userid(SigninSteps.java:104)\r\n\tat ✽.And Enters a valid userid \"cr\"(C:/SeleniumCucumber/CucumberSelenium/src/main/java/ncCucumber/features/Signin.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Enters a valid userid \"cr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cr",
+                  "offset": 23
+                }
+              ],
+              "location": "SigninSteps.Enters_a_valid_userid(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 23,
-            "name": "The user enters his credentials username - \"hammamiehfiras34@gmail.com\" and Password - \"Random\"",
+            "line": 10,
+            "name": "Enters a valid password \"Password1*\"",
             "match": {
               "arguments": [
                 {
-                  "val": "hammamiehfiras34@gmail.com",
-                  "offset": 44
-                },
-                {
-                  "val": "Random",
-                  "offset": 88
+                  "val": "Password1*",
+                  "offset": 25
                 }
               ],
-              "location": "LoginPageSteps.the_user_enters_his_credentials_username_and_Password(String,String)"
+              "location": "SigninSteps.Enters_a_valid_password(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Click on Signin button",
+            "match": {
+              "location": "SigninSteps.Click_on_Signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Check background Questions",
+            "match": {
+              "location": "SigninSteps.Check_background_Questions()"
             },
             "keyword": "Then "
           },
@@ -185,20 +352,75 @@
             "result": {
               "status": "skipped"
             },
-            "line": 24,
-            "name": "The user should be logged in.",
+            "line": 13,
+            "name": "validate login is successful",
             "match": {
-              "location": "LoginPageSteps.the_user_should_be_logged_in()"
+              "location": "SigninSteps.validate_login_is_successful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Check Important Notice Dialog",
+            "match": {
+              "location": "SigninSteps.Check_Important_Notice_Dialog()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Dashboard menu item dispaly is display",
+            "match": {
+              "location": "SigninSteps.Dashboard_menu_item_dispaly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Verify the signout button is visible",
+            "match": {
+              "location": "SigninSteps.Verify_the_signout_button_is_visible(String)"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Clicks on signout to leave the Dashboard page",
+            "match": {
+              "location": "SigninSteps.Clicks_on_signout_to_leave_the_Dashboard_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Verifies the signout is successful",
+            "match": {
+              "location": "SigninSteps.Verifies_the_signout_is_successful()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "As a user i should be able to login into the application",
+    "name": "Sign in feature",
     "description": "",
-    "id": "as-a-user-i-should-be-able-to-login-into-the-application",
+    "id": "sign-in-feature",
     "keyword": "Feature",
-    "uri": "D:/various/eclipse-workspace/CucumberSelenium/src/main/java/sanveoCucumber/features/LoginPage.feature"
+    "uri": "C:/SeleniumCucumber/CucumberSelenium/src/main/java/ncCucumber/features/Signin.feature"
   }
 ]
