@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -29,7 +30,7 @@ public class SanveoBase {
 		
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\SeleniumCucumber\\CucumberSelenium\\src\\main\\java\\nc\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("/Users/nccpamacbookprom1qa/IdeaProjects/seleniummacdemo/CucumberSelenium/src/main/java/nc/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -43,7 +44,7 @@ public class SanveoBase {
 		
 		String BrowserName = prop.getProperty("browser");
 		if (BrowserName.equalsIgnoreCase("Chrome")){
-			System.setProperty("webdriver.chrome.driver","C://Webdrivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","/Users/nccpamacbookprom1qa/Downloads/chromedriver");
 			driver = new ChromeDriver();
 		}
 		
@@ -58,7 +59,7 @@ public class SanveoBase {
 		}
 		
 		else if (BrowserName.equalsIgnoreCase("Safari")) {
-			System.setProperty("webdriver.safari.driver","D:/geckodriver.exe");
+			WebDriverManager.safaridriver();
 			driver = new SafariDriver();
 		}
 		else if(BrowserName.equalsIgnoreCase("Firefox")) {
